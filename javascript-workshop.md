@@ -180,7 +180,7 @@ let person = {
 2. สร้าง Object สำหรับเก็บข้อมูลนักศึกษา  ประกอบด้วยข้อมูล รหัสนักศึกษา, ชื่อ, สาขาวิชา, เกรดเฉลี่ย
 
 ### บันทึกผลการทดลอง 2.1
-```html
+```js
 let studentId = "67030025";
 const studentName = "กิตติภัค เกตุแก้ว";
 let midtermScore = 85;
@@ -246,10 +246,28 @@ number /= 2;          // เท่ากับ number = number / 2
 2. เขียนโปรแกรม กำหนดชื่อสินค้า ราคาสินค้า คำนวณราคาสินค้าที่รวม VAT 7% แล้วแสดงผลการคำนวณ
 
 ### บันทึกผลการทดลอง 2.2
-```html
-[บันทึกโค้ด ที่นี่]
+```js
+let score1 = 85;
+let score2 = 90;
+let score3 = 78;
+
+let avgScore = (score1 + score2 + score3) / 3;
+
+console.log("คะแนนเฉลี่ย:" , avgScore.toFixed(2));
+
+let productName = "มือถือ";
+let price = 20000;
+
+let vat = price * 0.07;
+let totalPrice = price + vat;
+
+console.log("ชื่อสินค้า : " , productName);
+console.log("ราคา : " , price + " บาท");
+console.log("vAT 7% :" , vat + " บาท");
+console.log("ราคารวม vat :" , totalPrice.toFixed(2));
 ```
-[รูปผลการทดลองที่ 2.2]
+![image](https://github.com/user-attachments/assets/77c0cf09-3c38-4615-bc1a-80685a8b7acd)
+
 
 ### 2.3 การควบคุมการทำงาน
 

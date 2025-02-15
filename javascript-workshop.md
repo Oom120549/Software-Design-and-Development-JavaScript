@@ -761,9 +761,48 @@ console.log(checkPassword("mypassword123"));
 
 ### บันทึกผลการทดลอง 3.1
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำนวณค่า BMI</title>
+</head>
+<body>
+    <h2>คำนวณค่า BMI</h2>
+    <label>น้ำหนัก (กิโลกรัม):</label>
+    <input type="number" id="weight" placeholder="ใส่น้ำหนัก"><br><br>
+
+    <label>ส่วนสูง (เมตร):</label>
+    <input type="number" id="height" placeholder="ใส่ส่วนสูง"><br><br>
+
+    <button onclick="calculateBMI()">คำนวณ BMI</button>
+
+    <p id="result"></p>
+
+    <script>
+        // Arrow Function คำนวณ BMI
+        const calculateBMI = () => {
+            let weight = parseFloat(document.getElementById("weight").value);
+            let height = parseFloat(document.getElementById("height").value);
+
+            if (!weight || !height || height <= 0) {
+                document.getElementById("result").innerHTML = "กรุณากรอกข้อมูลให้ถูกต้อง!";
+                return;
+            }
+
+            let bmi = (weight / (height ** 2)).toFixed(2);
+            let status = bmi < 18.5 ? "ผอม" :
+                         bmi < 24.9 ? "สมส่วน" : "อ้วน";
+
+            document.getElementById("result").innerHTML = `ค่า BMI ของคุณคือ ${bmi} (${status})`;
+        };
+    </script>
+</body>
+</html>
 ```
-[รูปผลการทดลองที่ 3.1]
+![image](https://github.com/user-attachments/assets/581b3c20-0895-41fd-a6f8-b2a61ba036a3)
+
 
 ## การทดลองที่ 3.2 : การสร้างฟอร์มสำหรับจองห้องพัก
 การสร้างฟอร์มลงทะเบียนเพื่อรวบรวมข้อมูลที่จำเป็นสำหรับการจองห้องพัก

@@ -1107,6 +1107,7 @@ console.log(checkPassword("mypassword123"));
 ```
 สรุป : ผมเพิ่มให้โปรแกรมแสดงราคาห้องของห้องแต่ละระดับ
 ![image](https://github.com/user-attachments/assets/a471e4ed-1aff-4827-8dc0-64985e56b1fa)
+
 ผล : จะทำการแสดงราคาค่าห้องแบบในภาพด้านล่าง
 ![image](https://github.com/user-attachments/assets/d26f4896-80c7-47d8-8083-0cbefea2e839)
 

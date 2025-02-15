@@ -561,9 +561,61 @@ process(function() {
 
 ### บันทึกผลการทดลอง 2.4.1
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html land="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="java 2.4.1.js"></script>
+</body>
+</html>
 ```
-[รูปผลการทดลองที่ 2.4.1]
+
+```js
+function calculateBMI(weight, height) {
+    let bmi = weight / (height * height);
+    return bmi.toFixed(2);
+}
+// ทดสอบใช้งาน
+console.log("BMI:", calculateBMI(70, 1.75));
+
+function greetUser(name, age) {
+    let message = "";
+
+    if (age < 13) {
+        message = "สวัสดี ไอน้อง " + name;
+    } else if (age < 20) {
+        message = "หวัดดี!  " + name;
+    } else {
+        message = "สวัสดี คุณ " + name;
+    }
+
+    console.log(message);
+}
+
+// ทดสอบใช้งาน
+greetUser("สมชาย", 10);
+greetUser("มานะ", 18);
+greetUser("วิชัย", 25);
+
+function checkPassword(password) {
+    if (password.length > 8) {
+        return "รหัสผ่านแข็งแรง";
+    } else {
+        return "รหัสผ่านสั้นเกินไป";
+    }
+}
+
+// ทดสอบใช้งาน
+console.log(checkPassword("12345"));
+console.log(checkPassword("mypassword123"));
+```
+![image](https://github.com/user-attachments/assets/06280592-e387-40d2-80ec-a5d8deff384c)
+
+
 
 
 
